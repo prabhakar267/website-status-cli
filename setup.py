@@ -2,28 +2,28 @@
 # @Author: prabhakar
 # @Date:   2016-06-28 23:44:47
 # @Last Modified by:   Prabhakar Gupta
-# @Last Modified time: 2016-06-28 23:50:38
+# @Last Modified time: 2016-07-01 00:41:45
 #!/usr/bin/env python
 
 from setuptools import setup, find_packages
 
 setup(
-    name='website-status-cli',
+    name='website-status',
     version='0.1.0.0',
-    description='Soccer for Hackers.',
+    description='',
     author='Prabhakar Gupta',
     license='MIT',
-    keywords="soccer football espn scores live tool cli",
+    keywords="",
     author_email='',
     url='',
     packages=find_packages(),
     install_requires=[
         "click",
-        "requests"
+        "requests",
     ],
     entry_points={
         'console_scripts': [
-            'website-status-cli = website_status_cli.main:website_code'
+            'website-status = website_status.main:website_code'
         ],
     }
 )
