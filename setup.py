@@ -2,16 +2,16 @@
 # @Author: prabhakar
 # @Date:   2016-06-28 23:44:47
 # @Last Modified by:   Prabhakar Gupta
-# @Last Modified time: 2016-07-02 19:51:32
+# @Last Modified time: 2016-07-02 19:55:51
 #!/usr/bin/env python
 
 from setuptools import setup, find_packages
 
 setup(
-    name='website-status',
+    name='website-up',
     version='0.1.0.1',
-    description='Get website status of any URL',
-    long_description='Check the status of any website i.e., if it is up or not using command line',
+    description='Check if a website is up or not',
+    long_description='Check the status of any website by getting status code of the website or simple True - False i.e., if it is up or not using command line',
     author='Prabhakar Gupta',
     license='MIT',
     keywords="website-status website status status_code code",
