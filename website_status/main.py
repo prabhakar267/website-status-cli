@@ -15,9 +15,9 @@ Function to check website status and return response according to code
     status_code     integer     if code is set True
     None                        if URL is not of proper format
 """
-def __check_website(url, code):
+def _check_website(url, code):
     try:
-        response = requests.get(url, headers={'user_agent': DEFAULT_HEADERS}, timeout=15)
+        response = requests.head(url, headers={'user_agent': DEFAULT_HEADERS})
         website_status_code = response.status_code
         if code:
             return website_status_code
@@ -67,5 +67,5 @@ def website_code(url, code, f):
             print response
             time.sleep(f)
     else:
-        print __check_website(url, code)
+        print _check_website(url, code)
 
