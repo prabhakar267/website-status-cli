@@ -28,4 +28,5 @@ Options:
   --help      Show help
 ```
 
-
+## Example
+![website-status](screenshot/Screenshot from 2016-07-02 20:08:58.png?raw=true)
